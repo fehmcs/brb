@@ -1,11 +1,26 @@
 body{
-    background-color:blueviolet;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
     display:flex;
     justify-content:center;
     align-items:center;
     text-align:center;
     padding:0;
     margin:0;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -28,10 +43,12 @@ body {
   margin-right: 50px;
 }
 .logo:hover{
-    background-color:rgb(129, 20, 129);
-    transition:1s;
-    animation: shake 0.5s;
-    animation-iteration-count: infinite;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 100% 100%;
+    animation: gradient 15s ease infinite;
+  transition:3s;
+  animation: shake 0.5s;
+  animation-iteration-count: infinite;
 
 }
 .palacio{
