@@ -20,5 +20,13 @@
         <source src="brb.mp4" type="video/mp4">
         Your browser does not support HTML video.
       </video>
+      <audio controls id="audiobrb" autoplay>
+        <source src="brb.mp3" type="audio/ogg">
+      Your browser does not support the audio element.
+      </audio>
+      <script>
+        var audio = document.getElementById("audiobrb");
+        audio.volume = 0.05;
+      </script>
     </body>
 </html>
