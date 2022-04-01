@@ -37,11 +37,20 @@ body {
     height: 100%;
 }
 .logo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+    box-shadow: 10px 5px 5px rgba(15, 15, 15, 1); 
     background-color:black;
   border-radius: 10px;
   cursor:pointer;
   margin-right: 50px;
 }
+
+audio{
+  visibility: hidden;
+}
+
 .logo:hover{
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 100% 100%;
@@ -69,7 +78,4 @@ body {
     90% { transform: translate(1px, 2px) rotate(0deg); }
     100% { transform: translate(1px, -2px) rotate(-1deg); }
   }
-
-  #audiobrb{
-    visibility: hidden;
-  }
+  
